@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #081846;
+}
+
+.glass-effect {
+    background-color: #ffffff22;
+    /* backdrop-filter: blur(16px); */
+}
+
+.none-effect {
+    background-color: transparent;
+    border: none;
+}
+
+#current {
+    position: relative; /* Enables positioning for child elements */
+    height: 300px; /* Adjust the height to fit content */
+    padding: 0; /* Remove padding to allow precise positioning */
+    overflow: hidden; /* Ensure content stays within the card */
+}
+
+#currentLocation {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 4rem; /* Adjust font size as needed */
+    font-weight: 700;
+    margin: 0;
+}
+
+#rainChance {
+    position: absolute;
+    top: 75px;
+    left: 15px;
+    margin: 0;
+}
+
+#currentTemp {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 5rem; /* Adjust font size as needed */
+    font-weight: 700;
+    margin: 0;
+}
+
+#currentWeaIcon {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+#forecast {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling if content overflows */
+    gap: 20px; /* Adds spacing between forecast blocks */
+    padding: 10px;
+}
+
+.forecast-hours {
+    display: flex;
+    flex-direction: column; /* Align elements vertically within each block */
+    align-items: center; /* Center items horizontally */
+    min-width: 100px; /* Ensure consistent width for forecast blocks */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Add transparency for glass effect */
+    border-radius: 10px; /* Smooth rounded edges */
+    padding: 10px;
+}
+
+.air-condition {
+    padding-left: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
